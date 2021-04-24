@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="bootstrap-5.0.0-beta3-dist/css/bootstrap.css">
+    <script src="bootstrap-5.0.0-beta3-dist/js/bootstrap.js"></script>
+    <script src="javascript/validationClient.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <h1 hidden id="hey">Option non valide, choisissez A</h1>
+    <form id="monFormulaire" autocomplete="off" onsubmit="return validerFormulaire()">
+        <label for="inputText" >Entrez votre nom : </label>
+        <input type="text" size=10 id="inputText" name="inputText" maxlength="10" required />
+        <br/>
+        <label for="inputText2" >Entrez votre âge: </label>
+        <input  type="number" id="inputText2" name="inputText2" min="5" max="150" required />
+        <br/>
+        <label for="inputCodePostal" >Entrez votre code postale </label>
+        <input type="text" id="inputCodePostal" autofocus name="inputCodePostal" 
+        pattern="[A-Z][0-9][A-Z] [0-9][A-Z][0-9]" placeholder="G1X 1V0" required/>
+
+        <label for="monSelect">Choisir une option : </label>
+        <select id="monSelect">
+            <option value="Abracadabra">A</option>
+            <option value="Buble">B</option>
+            <option value="Carton">C</option>
+            <option value="Défi">D</option>
+        </select>
+        <br/>
+        <input type="submit" value="go !"/>
+    </form>
+</body>
+</html>
