@@ -1,0 +1,56 @@
+.card {
+  display: block;
+  background-color: white;
+  width: 30rem;
+}
+
+.card__header {
+  display: block;
+  border: 1px solid darkgray;
+  height: 5rem;
+}
+.card__header--red {
+  background-color: indianred;
+}
+
+.nav {
+  padding-inline-start: 0;
+}
+.nav__item {
+  display: inline-block;
+  list-style-type: none;
+
+  padding: 0.5rem;
+  border-right: 1px solid white;
+}
+
+.nav__lien {
+  appearance: button;
+  padding: 0.3rem;
+  text-decoration: none;
+  background-color: lightgrey;
+  border: 1px solid darkgray;
+  border-radius: 10px;
+}
+
+.navlien--active {
+  background-color: gray;
+}
+
+.commentaire {
+  font-size: 1.5rem;
+}
+
+.button {
+  border: 1px solid darkgray;
+  border-radius: 10px;
+  padding: 0.5rem;
+}
+
+.button--normal {
+  background-color: lightgreen;
+}
+
+.button--hover:hover {
+  background-color: green;
+}
