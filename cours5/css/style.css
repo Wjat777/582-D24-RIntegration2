@@ -37,20 +37,20 @@
   background-color: gray;
 }
 
-.commentaire {
+.card__commentaire {
   font-size: 1.5rem;
 }
 
-.button {
+.card__button {
   border: 1px solid darkgray;
   border-radius: 10px;
   padding: 0.5rem;
 }
 
-.button--normal {
+.card__button--normal {
   background-color: lightgreen;
 }
 
-.button--hover:hover {
+.card__button--hover:hover {
   background-color: green;
 }
