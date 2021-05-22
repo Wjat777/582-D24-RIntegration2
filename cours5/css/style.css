@@ -7,7 +7,7 @@
 .card__header {
   display: block;
   border: 1px solid darkgray;
-  height: 5rem;
+  height: 6rem;
 }
 .card__header--red {
   background-color: indianred;
