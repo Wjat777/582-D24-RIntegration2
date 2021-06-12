@@ -1,0 +1,9 @@
+/*4. Créez un @mixin avec paramètre qui affiche une image à gauche ou à droite selon le paramètre.*/
+@mixin imagePosition($position)
+    image-orientation: #{$position}
+
+.image_left
+    @include imagePosition(left)
+
+.image_right
+    @include imagePosition(right)

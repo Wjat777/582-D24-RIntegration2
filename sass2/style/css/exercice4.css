@@ -1,0 +1,9 @@
+@charset "UTF-8";
+/*4. Créez un @mixin avec paramètre qui affiche une image à gauche ou à droite selon le paramètre.*/
+.image_left {
+  image-orientation: left;
+}
+
+.image_right {
+  image-orientation: right;
+}

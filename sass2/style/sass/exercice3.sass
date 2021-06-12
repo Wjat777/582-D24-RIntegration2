@@ -1,0 +1,6 @@
+/* 3. Créez une map de chiffre:valeur (“un”:1, “deux”:2,..., “dix”:10).  Avec une boucle @each et de votre map, créez 10 classes qui ajustent la largeur d’un élément de 1 à 10 rem.*/
+
+$chifres: ("un": 1, "deux": 2, "trois": 3, "quatre":4,"cinq":5,"six":6, "sept":7, "huit":8,"neuf":9,"dix":10)
+@each $name,$value in $chifres
+    .blockwidth-#{$name}
+        width: $value

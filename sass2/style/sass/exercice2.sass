@@ -1,0 +1,22 @@
+/* Créez une variable contenant une liste de directions (nord,sud,est,west). Avec une boucle @each, créez 4 classes avec comme background image un flèche pointant la bonne direction */
+$directions: nord,sud,est,west
+
+@mixin arrow
+    /*from bootstrap icons: https://icons.getbootstrap.com/icons/arrow-up/*/
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-arrow-up" viewBox="0 0 16 16"><path fill-rule="evenodd" d="M8 15a.5.5 0 0 0 .5-.5V2.707l3.146 3.147a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 1 0 .708.708L7.5 2.707V14.5a.5.5 0 0 0 .5.5z"/></svg>')
+    background-repeat: no-repeat
+
+@each $direction in $directions
+    .dir-#{$direction}
+        display: inline-block
+        width: 2rem
+        height: 2rem
+        @include arrow
+        @if $direction == nord
+            transform: rotate(0deg)
+        @else if $direction == sud
+            transform: rotate(180deg)
+        @else if $direction == est
+            transform: rotate(90deg)
+        @else if $direction == west
+            transform: rotate(-90deg)

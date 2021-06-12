@@ -1,0 +1,41 @@
+@charset "UTF-8";
+/* 3. Créez une map de chiffre:valeur (“un”:1, “deux”:2,..., “dix”:10).  Avec une boucle @each et de votre map, créez 10 classes qui ajustent la largeur d’un élément de 1 à 10 rem.*/
+.blockwidth-un {
+  width: 1;
+}
+
+.blockwidth-deux {
+  width: 2;
+}
+
+.blockwidth-trois {
+  width: 3;
+}
+
+.blockwidth-quatre {
+  width: 4;
+}
+
+.blockwidth-cinq {
+  width: 5;
+}
+
+.blockwidth-six {
+  width: 6;
+}
+
+.blockwidth-sept {
+  width: 7;
+}
+
+.blockwidth-huit {
+  width: 8;
+}
+
+.blockwidth-neuf {
+  width: 9;
+}
+
+.blockwidth-dix {
+  width: 10;
+}
