@@ -1,0 +1,14 @@
+/*Créez une fonction qui prend en paramètre une String et une lettre. La fonction doit retourner combien de fois la lettre est présente dans la string !ex : Mafonction(bonjour,o) retourne 2.*/
+
+@function MaFonction($string, $char)
+
+    $count: 0
+    @for $var from 0 through str-length($string)
+        @if str-slice($string, $var, $var)==$char
+            $count: $count+1
+    @return $count
+
+.test1
+    width: MaFonction("bonjour","o")
+.test2
+    width: MaFonction("banana","a")
