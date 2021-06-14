@@ -1,0 +1,45 @@
+.personne__corps {
+  color: blue;
+}
+
+.personne__tete {
+  color: red;
+}
+
+.personne__bras--droit {
+  color: yellow;
+}
+
+.personne__bras--gauche {
+  color: green;
+  tatuage: true;
+}
+
+.personne__main--droit {
+  color: yellow;
+  bague: true;
+}
+
+.personne__main--gauche {
+  color: yellow;
+}
+
+.personne__jambe--droit {
+  color: yellow;
+}
+
+.personne__jambe--gauche {
+  color: yellow;
+}
+
+.personne__pied {
+  color: yellow;
+}
+
+.personne__pied--droit {
+  color: yellow;
+}
+
+.personne__pied--gauche {
+  color: yellow;
+}
